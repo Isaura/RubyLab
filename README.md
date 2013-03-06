@@ -14,3 +14,12 @@ Também está prevista a participação de profissionais da área e a participa�
 O objetivo principal do RubyLab é formar um time especializado em desenvolvimento web utilizando Ruby/Rails.
 Os conhecimentos adquiridos pela equipe e o contato mais próximo com a linguagem serão importantes para determinar
 os rumos do desenvolvimento de aplicações web pela Tecsystem, hoje baseadas na plataforma Java.
+
+## Retrospectiva
+
+### Dia 1
+
+  * Front-end com HTML e CSS [Talk - Breno Martinusso]
+  * Protocolo HTTP [Talk - Carlos Fim]
+  * Instalação do ambiente Ruby/Rails
+  * Instalação do banco de dados MySQL 5.6
