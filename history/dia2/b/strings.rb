@@ -53,7 +53,7 @@ def is_leap_year(year)
     ((year % 400) == 0) or (((year % 4) == 0) and ((year % 100) != 0))
 end
 if ano_final < ano_inicial
-    puts 'não é possível realizar essa brincadeira se você não brincar corretamente'
+    puts 'não é possível realizar essa brincadeira'
 else
     for ano in ano_inicial..ano_final
         if is_leap_year(ano)
