@@ -15,19 +15,17 @@ puts "Não seria melhor o #{n.to_s}?"
 
 # "Um elefante incomoda muita gente..." Escreva um programa que imprima a letra para o clássico das viagens de carro, com um limite de 100 elefantes.
 for i in 1..10
-  gente = 'muita gente'
-  mais = 'muito mais'
   if i == 1
-    e = 'elefante incomoda' << gente
+    puts "#{i} elefante incomoda muita gente"
   elsif i % 2 == 0
-    e = 'elefantes ' << 'incomodam ' * i << mais
+    puts "#{i} elefantes " << 'incomodam ' * i << 'muito mais'
   else
-    e = 'elefantes incomodam ' << gente
+    puts "#{i} elefantes incomodam muita gente"
   end
-  puts "#{i.to_s} #{e}"
 end
 
 # Escreva um programa Velha Surda. O que quer que você diga à velha (o que quer que você digite), ela tem que responder com “QUE?! FALA MAIS ALTO!”, a não ser que você grite (digite tudo em maiúsculas). Se você gritar, ela pode lhe ouvir (ou ao menos pensa que pode), e sempre responde “NÃO, NÃO DESDE 1938!” Você não pode parar de falar com a velha enquanto não gritar “TCHAU!”.
+puts "Vamos falar com a vovó! Tadinha dela."
 while true
   que = 'QUE?! FALA MAIS ALTO!'
   nao = 'NÃO, NÃO DESDE 1938'

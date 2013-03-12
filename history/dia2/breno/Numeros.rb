@@ -12,21 +12,15 @@ minutos_decada = horas_decada * 60
 puts "Há #{minutos_decada} minutos em uma década"
 
 # qual é a sua idade em segundos?
-def idade_segundos
-    print "Qual o ano do seu nascimento?"
-    anoNascimento = gets.chomp.to_i
-    datasistema = Time.now.to_s
-    ano = datasistema[0, 4]
-    anos = ano.to_i - anoNascimento
-    dias = anos * 365 + (anos/4)
-    horas = dias * 24
-    minutos = horas * 60
-    segundos = minutos * 60
-    return "Sua idade em segundos é: "+ segundos.to_s
-end
-puts idade_segundos
+print "Qual o ano do seu nascimento?"
+ano_nascimento = gets.chomp.to_i
+ano_atual = Time.now.year
+anos = ano_atual - ano_nascimento
+idade_segundos = anos * 360 * 24 * 60 * 60
+puts "A minha idade em segundos é #{idade_segundos}"
+
 # quantos chocolates você pretende comer na vida? 
-puts 'muitos'
+puts 'Muitos comerei em minha vida!'
 # Eis uma pergunta mais difícil:
 # Se minha idade é de 1154 milhões de segundos, qual é minha idade em anos?
 segundos = 1154000000
