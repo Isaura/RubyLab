@@ -23,3 +23,8 @@ os rumos do desenvolvimento de aplicações web pela Tecsystem, hoje baseadas na
   * Protocolo HTTP [Talk - Carlos Fim]
   * Instalação do ambiente Ruby/Rails
   * Instalação do banco de dados MySQL 5.6
+
+### Dia 2
+  * Introdução à linguagem Ruby
+  * Exercícios com números
+  * Exercícios com textos
