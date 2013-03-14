@@ -11,7 +11,7 @@ lógica
   - Adicionar Vendedor I
   - Adicionar Vendedor II
   - Adicionar Vendedor III
-	
+  - ...
   - Comprar Gol
   - Comprar Palio
   - Comprar 207
@@ -22,7 +22,6 @@ lógica
   - Comprar Celta
   - Comprar Passat
   - ...
-
   - Vender Gol - Vendedor I
   - Vender Palio - Vendedor I
   - Vender Celta - Vendedor III
