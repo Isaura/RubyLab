@@ -3,6 +3,7 @@ Criar um classe Concessionaria
   - Comprar carro
   - Contratar vendedor
   - Imprimir ranking vendedores
+  - Imprimir histórico de vendas
   - imprimir carros vendidos
   - imprimir carros em estoque
 
