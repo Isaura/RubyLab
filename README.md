@@ -25,6 +25,18 @@ os rumos do desenvolvimento de aplicações web pela Tecsystem, hoje baseadas na
   * Instalação do banco de dados MySQL 5.6
 
 ### Dia 2
-  * Introdução à linguagem Ruby
+  * Introdução à linguagem Ruby [Talk - Breno Martinusso]
   * Exercícios com números
   * Exercícios com textos
+
+### Dia 3
+  * RubyLab #3 [Talk - Breno Martinusso]
+    * Iteradores e blocos
+    * Modificadores de acesso
+    * Syntax Sugar
+  * Continuação dos exercícios do dia 2
+
+### Dia 4
+  * Ruby Style [Talk - Breno Martinusso]
+  * MySQL [Talk - Eduardo]
+  * Exercícios
