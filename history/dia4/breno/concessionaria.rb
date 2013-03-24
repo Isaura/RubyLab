@@ -37,7 +37,7 @@ class Concessionaria
   end
 
   def imprimir_ranking_vendedores
-    @vendas.each {|v, c| puts "#{v} => #{c.size}"}
+    @vendas.each {|vendedor, carro| puts "#{vendedor} => #{carro.size}"}
   end
 
   def imprimir_vendas
