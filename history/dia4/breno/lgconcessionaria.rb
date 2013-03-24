@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require '.\concessionaria.rb'
 
 c = Concessionaria.new
@@ -30,5 +32,22 @@ c.vender_carro('Gol', 'Leandra')
 
 # puts c.vendas
 
-puts c.imprimir_ranking_vendedores
-puts c.imprimir_vendas
+puts "\nRanking dos vendedores"
+puts '-' * 25
+c.imprimir_ranking_vendedores
+puts '-' * 25
+
+puts "\nHistórico de vendas"
+puts '-' * 25
+c.imprimir_vendas
+puts '-' * 25
+
+puts "\nCarros vendidos"
+puts '-' * 25
+c.imprimir_carros_vendidos
+puts '-' * 25
+
+puts "\nCarros em estoque"
+puts '-' * 25
+c.imprimir_carros_estoque
+puts '-' * 25

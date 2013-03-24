@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class Concessionaria
   attr_reader :vendedores
   attr_reader :carros_estoque
@@ -9,9 +11,9 @@ class Concessionaria
   end
 
   def contratar_vendedor(nome)
-    n = nome.upcase
-    if @vendedores.count(n) == 0
-      @vendedores << n
+    s = nome.to_sym
+    if @vendedores.count(s) == 0
+      @vendedores << s
     end
   end
 
@@ -20,12 +22,12 @@ class Concessionaria
   end
 
   def vender_carro(nome_carro, nome_vendedor)
-    c = nome_carro.upcase
-    vendedor = nome_vendedor.upcase
-    if @carros_estoque.count(c) > 0
+    carro = nome_carro.upcase
+    vendedor = nome_vendedor.to_sym
+    if @carros_estoque.count(carro) > 0
       if @vendedores.count(vendedor) > 0
-        @vendas[vendedor] = @vendas[vendedor].to_a << c
-        @carros_estoque.delete_at(@carros_estoque.index(c))
+        @vendas[vendedor] = @vendas[vendedor].to_a << carro
+        @carros_estoque.delete_at(@carros_estoque.index(carro))
       else
         puts 'O vendedor selecionado não foi contratado!'
       end
@@ -35,16 +37,20 @@ class Concessionaria
   end
 
   def imprimir_ranking_vendedores
-    puts '-' * 25
     @vendas.each {|v, c| puts "#{v} => #{c.size}"}
-    puts '-' * 25
   end
 
   def imprimir_vendas
-    puts '-' * 25
-    for vendedor, carros in @vendas
-      carros.each {|c| puts "Vendedor: #{vendedor}  | Carro: #{c}"}
+    @vendas.each do |vendedor, carros|
+      puts "Vendedor: #{vendedor}\n  Carros vendidos: #{carros.join(", ")}\n"
     end
-    puts '-' * 25
+  end
+
+  def imprimir_carros_vendidos
+    @vendas.each_value { |carros| puts carros.join("\n") }
+  end
+
+  def imprimir_carros_estoque
+    puts @carros_estoque.join("\n")
   end
 end
